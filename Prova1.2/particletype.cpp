@@ -5,11 +5,12 @@
 #include <iostream>
 
 
-std::string const ParticleType::GetParticleName() { return fName_; };
-double const ParticleType::GetMass() { return fMass_; };
-int const ParticleType::GetCharge() { return fCharge_; };
+std::string ParticleType::GetParticleName() const { return fName_; };
+double ParticleType::GetMass() const { return fMass_; };
+int ParticleType::GetCharge() const { return fCharge_; };
+double ParticleType::GetWidth() const { return 0; };
 
-void const ParticleType::Print() {
+void ParticleType::Print() const {
     std::cout << "Particle name is " << fName_ << '\n';
     std::cout << "Particle mass is " << fMass_ << '\n';
     std::cout << "Particle charge is " << fCharge_ << '\n';

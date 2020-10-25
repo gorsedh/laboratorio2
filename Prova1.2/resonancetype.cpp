@@ -5,10 +5,12 @@
 
 #include <iostream>
 
-void const ResonanceType::Print() {
+void ResonanceType::Print() const {
     ParticleType::Print();
-    std::cout << "Particle widht is " << fWidth_ << '\n';
+    std::cout << "Resonance width is " << fWidth_ << '\n';
 }
+
+double ResonanceType::GetWidth() const { return fWidth_; }
 
 ResonanceType::ResonanceType(std::string name, double mass, int charge, double width) :
         ParticleType{name, mass, charge}, fWidth_{width} {};

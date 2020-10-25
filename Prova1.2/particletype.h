@@ -5,11 +5,13 @@
 
 class ParticleType{
 public:
-    std::string const GetParticleName(); //i getter
-    double const GetMass();
-    int const GetCharge();
+    std::string GetParticleName() const; //i getter
+    double GetMass() const;
+    int GetCharge() const;
+    virtual double GetWidth() const;
 
-    virtual void const Print(); //print
+    virtual void Print() const; //print
+    
 
     ParticleType(std::string name, double mass, int charge); //costruttore
 

@@ -18,12 +18,17 @@ int main(){
     Particle::AddParticleType("i", 10.1, 7);
     Particle::AddParticleType("j", 10.1, 7);
     Particle::AddParticleType("k", 10.1, 7);*/
-    //Particle::PrintArray();
+    Particle::PrintArray();
 
     auto f = Particle("pluto", 2, 3, 4);
     f.ParticlePrint();
+    std::cout << f.GetMass() << "\n";
+    std::cout << f.ParticleEnergy() << "\n";
+    f.SetParticleMomentum(5, 6, 7);
+    std::cout << f.ParticleEnergy() << "\n";
+    f.ParticlePrint();
+
 }
 
-//Ho fatto fino ai getters bisogna aggiungere quella roba
-//abbiamo il probllema che quando non trova la particella c'è un segmentation fault
+//abbiamo il problema che quando non trova la particella c'è un segmentation fault
 //possibili soluzioni, aggiungere opzione per costruire particella nuova quando chiamata

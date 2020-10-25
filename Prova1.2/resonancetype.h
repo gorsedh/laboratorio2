@@ -5,9 +5,9 @@
 
 class ResonanceType : public ParticleType{
 public:
-    double const GetWidth(); //getter
+    double GetWidth() const override; //getter
 
-    void const Print() override; //print
+    void Print() const override; //print
 
     ResonanceType(std::string name, double mass, int charge, double width); //costruttore
 
