@@ -1,0 +1,1 @@
+g++ particle.cpp particletype.cpp resonancetype.cpp main.cpp `root-config --cflags --libs` -O3 -Wall -Wextra   
