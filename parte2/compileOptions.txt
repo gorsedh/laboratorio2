@@ -1,7 +1,0 @@
-Compile from bash
-
-g++ particle.cpp particletype.cpp resonancetype.cpp main.cpp `root-config --cflags --libs`
-
-Compile in root
-
-.L macro.cpp+
