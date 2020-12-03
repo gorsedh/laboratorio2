@@ -8,7 +8,7 @@ int main(){
 
     double pi = M_PI;
 
-    TFile *file = TFile::Open("datidaestrarre.root");
+    TFile *file = TFile::Open("data.root");
     TFile *flMC_file = new TFile("locale.root");
 
     gStyle->SetOptFit(1);
